@@ -1,0 +1,30 @@
+.homePage {
+  margin-top: 3rem;
+
+  .productCard {
+    $self: &;
+    padding: 1rem;
+    img {
+      max-width: 100%;
+      display: block;
+      border-radius:6px 6px  0 0 ;
+    }
+
+    &__copy {
+      padding: 1rem;
+      background: #f4f4f4;
+      border-radius: 0 0 6px 6px;
+      border: 1px solid #f4f4f4;
+      transition: 0.5s all ease;
+      font-size: 0.8rem;
+      line-height: 1.2rem;
+    }
+
+    &:hover {
+      .productCard__copy {
+        background: transparent;
+        border: 1px solid #cecece;
+      }
+    }
+  }
+}

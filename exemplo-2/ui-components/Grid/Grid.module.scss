@@ -1,0 +1,14 @@
+
+.grid {
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    padding: $list-gutter/2;
+    margin: (-$list-gutter) (-$list-gutter);
+    &__col {
+      flex-basis: 100%;
+      padding: $list-gutter/2;
+    }
+  }
+}

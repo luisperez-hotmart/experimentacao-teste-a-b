@@ -1,0 +1,46 @@
+.productPage {
+  .productDetails {
+    margin-top: 3rem;
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+
+      &__image {
+        img {
+          width: 100%;
+          border-radius: 6px;
+        }
+      }
+
+      &__description {
+        flex: 1 1 auto;
+        margin: 2rem 0;
+        line-height: 1.5rem;
+      }
+
+      &__checkout {
+      }
+    }
+  }
+
+  @media screen and (min-width: 797px) {
+    .productDetails {
+      &__content {
+        flex-direction: row;
+        &__image {
+          flex: 1 0 20%;
+        }
+
+        &__description {
+          margin: 0 2rem;
+          flex: 0 1 40%;
+        }
+
+        &__checkout {
+          flex: 1 0 20%;
+        }
+      }
+    }
+  }
+}
