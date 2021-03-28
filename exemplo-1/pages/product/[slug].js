@@ -9,7 +9,6 @@ export default function Home() {
   const contentRef = useRef(null);
 
   const setNewContent = (isNewContent) => {
-    console.log('chamou aqui');
     let content = 'Conteudo do produto aqui';
     if (isNewContent) {
       content = 'Novo conteudo';
@@ -23,7 +22,7 @@ export default function Home() {
       window.dataLayer = window.dataLayer || [];
       dataLayer.push({
         event: 'optimize.activate',
-        eventTimeout: 2000,
+        eventTimeout: 5000,
         eventCallback: () => {
           console.log(
             '🚀 ~ Mostrando variante: ',

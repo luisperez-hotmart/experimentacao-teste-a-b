@@ -22,7 +22,7 @@ export default function Home() {
       window.dataLayer = window.dataLayer || [];
       dataLayer.push({
         event: 'optimize.activate',
-        eventTimeout: 2000,
+        eventTimeout: 5000,
         eventCallback: () => {
           console.log(
             '🚀 ~ Mostrando variante: ',

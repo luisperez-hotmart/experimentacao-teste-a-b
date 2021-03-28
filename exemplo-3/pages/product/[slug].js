@@ -29,7 +29,7 @@ export default function Home(props) {
             // nome customizado para ativação do experimento
             event: 'nome-customizado',
             // timeout do evento
-            eventTimeout: 2000,
+            eventTimeout: 5000,
             eventCallback: () => {
               // utilizando a callback para mostrar as informações do produto depois do carregamento - Não obrigatório e é usado para que o usuário não perceba as alterações na tela
               setShowProduct(true);
